@@ -2,6 +2,12 @@ body {
     background-color: rgb(249, 249, 244);
 }
 
+.carousel-item img {
+    max-width: 45%; /* Establece el ancho máximo al 50% del contenedor */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+}
+
+/* /////////////////////////////////// */
 .img-fluid {
     max-width: 200px;
     height: auto;
@@ -10,12 +16,12 @@ body {
 
 .img-container {
     width: 100%;
-    height: 50%; /* El 100% de la altura visible del dispositivo */
+    height: 250px; /* El 100% de la altura visible del dispositivo */
     overflow: hidden; /* Para evitar que la imagen se desborde del contenedor */
 }
 .img-container img {
     width: 100%;
-    height: 25%; /* El 100% del contenedor, asegurando que la imagen abarque todo */
+    height: 250px; /* El 100% del contenedor, asegurando que la imagen abarque todo */
     object-fit: cover; /* Para que la imagen se ajuste proporcionalmente y cubra el contenedor */
 }
 .img-container {
@@ -28,10 +34,36 @@ body {
     left: 50%; /* Centra los botones horizontalmente */
     transform: translateX(-50%); /* Corrige el centrado horizontal */
 }
+/* ////////////////////////////////////// */
+.container {
+    margin-top: 50px;
+}
 
+.row.no-gutters [class^="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
 
+.row.no-gutters [class^="col-"] img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.row.no-gutters [class^="col-"] img:hover {
+    filter: brightness(70%); /* Oscurece la imagen al 70% al hacer hover */
+    transform: scale(0.9); /* Reduce el tamaño de la imagen al 90% al hacer hover */
+}
+
+.row.no-gutters [class^="col-"] p {
+    text-align: center;
+    font-weight: bold;
+}
 
 .footer {
     border-top: 1px solid black;
-    background-color: #f8f9fa;
+    background-color: #404243;
 }
+
+

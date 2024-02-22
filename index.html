@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Sección de botones -->
     <div class="container">
@@ -24,36 +26,98 @@
 
     <!-- Sección del carrusel -->
     <div class="container mt-5">
-        <div class="row">
-            <div class="col-12">
-                <!-- Aquí puedes poner tu carrusel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="imagnes/falda5.jfif" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagnes/pantalon5.jfif" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagnes/reloj5.jfif" alt="Third slide">
+                </div>
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="imagnes/falda5.jfif" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagnes/pantalon5.jfif" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagnes/reloj5.jfif" alt="Third slide">
+                </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 
     <!-- Sección con tres columnas -->
     <div class="container mt-5">
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-sm-4">
-                <img src="imagnes/falda1.jfif" alt="Descripción de la imagen 1" class="img-fluid">
+                <img src="imagnes/falda1.jfif" alt="Descripción de la imagen 1">
                 <p>Faldas</p>
             </div>
             <div class="col-sm-4">
-                <img src="imagnes/pantalon2.jfif" alt="Descripción de la imagen 2" class="img-fluid">
+                <img src="imagnes/pantalon2.jfif" alt="Descripción de la imagen 2">
                 <p>Pantalones</p>
             </div>
             <div class="col-sm-4">
-                <img src="imagnes/reloj1.jfif" alt="Descripción de la imagen 3" class="img-fluid">
+                <img src="imagnes/reloj1.jfif" alt="Descripción de la imagen 3">
                 <p>Accesorios</p>
             </div>
         </div>
-    </div>
 
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col">
-                <div class="img-container">
-                    <img src="imagnes/fondo2.jpg" alt="Foto">
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col">
+                    <div class="img-container">
+                        <img src="imagnes/fondo2.jpg" alt="Foto">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-primary">Casual</button>
+                            <button type="button" class="btn btn-primary">Elegante</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-5">
+            <div class="row no-gutters">
+                <div class="col-sm-4">
+                    <img src="imagnes/vestido3.jfif" alt="Descripción de la imagen 1" class="img-fluid">
+                    <p>Vestidos</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="imagnes/blusa2.jfif" alt="Descripción de la imagen 2" class="img-fluid">
+                    <p>Blusas</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="imagnes/reloj1.jfif" alt="Descripción de la imagen 3" class="img-fluid">
+                    <p>Accesorios</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/fhYGOE18cyU?autoplay=1&mute=1&loop=1&controls=0"
+                        frameborder="0" allowfullscreen class="img-fluid img-cover"></iframe>
                     <div class="overlay">
                         <button type="button" class="btn btn-primary">Casual</button>
                         <button type="button" class="btn btn-primary">Elegante</button>
@@ -61,59 +125,30 @@
                 </div>
             </div>
         </div>
-    </div>
+        <!-- Pie de página -->
+        <footer class="footer mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h5>Contáctanos</h5>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Calle Principal, Ciudad</p>
+                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope"></i> info@example.com</p>
+                    </div>
+                    <div class="col">
+                        <h5>Síguenos en</h5>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-    
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="imagnes/vestido1.jfif" alt="Descripción de la imagen 1" class="img-fluid">
-                <p>Vestidos</p>
-            </div>
-            <div class="col-sm-4">
-                <img src="imagnes/blusa3.jfif" alt="Descripción de la imagen 2" class="img-fluid">
-                <p>Blusas</p>
-            </div>
-            <div class="col-sm-4">
-                <img src="imagnes/reloj3.jfif" alt="Descripción de la imagen 3" class="img-fluid">
-                <p>Accesorios</p>
-            </div>
-        </div>
-    </div>
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fhYGOE18cyU?autoplay=1&mute=1&loop=1&controls=0" frameborder="0" allowfullscreen class="img-fluid img-cover"></iframe>
-                <div class="overlay">
-                    <button type="button" class="btn btn-primary">Casual</button>
-                    <button type="button" class="btn btn-primary">Elegante</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Pie de página -->
-    <footer class="footer mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h5>Contáctanos</h5>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Calle Principal, Ciudad</p>
-                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
-                    <p><i class="fas fa-envelope"></i> info@example.com</p>
-                </div>
-                <div class="col">
-                    <h5>Síguenos en</h5>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
