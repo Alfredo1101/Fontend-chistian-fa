@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(249, 249, 244);
+}
+
+.img-fluid {
+    max-width: 200px;
+    height: auto;
+    max-height: 100%;
+}
+
+.img-container {
+    width: 100%;
+    height: 50%; /* El 100% de la altura visible del dispositivo */
+    overflow: hidden; /* Para evitar que la imagen se desborde del contenedor */
+}
+.img-container img {
+    width: 100%;
+    height: 25%; /* El 100% del contenedor, asegurando que la imagen abarque todo */
+    object-fit: cover; /* Para que la imagen se ajuste proporcionalmente y cubra el contenedor */
+}
+.img-container {
+    position: relative; /* Posición relativa para que los elementos absolutos sean relativos a este contenedor */
+}
+
+.overlay {
+    position: absolute; /* Posicionamiento absoluto para que los botones se superpongan sobre la imagen */
+    bottom: 10px; /* Ajusta la posición vertical de los botones */
+    left: 50%; /* Centra los botones horizontalmente */
+    transform: translateX(-50%); /* Corrige el centrado horizontal */
+}
+
+
+
+.footer {
+    border-top: 1px solid black;
+    background-color: #f8f9fa;
+}
